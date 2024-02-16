@@ -1,0 +1,12 @@
+{
+    "name": "kirill-gubenko/directory-reader",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "KirillGubenko\\DirectoryReader\\": "src/"
+        }
+    },
+    "require": {
+      "php": ">=8"
+    }
+}

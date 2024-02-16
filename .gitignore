@@ -1,0 +1,10 @@
+.idea/
+vendor
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local dev
+.editorconfig
+index.php
+composer.lock
