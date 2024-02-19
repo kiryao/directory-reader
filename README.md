@@ -1,10 +1,10 @@
-# Directory Reader
+## Введение
 
-Класс-помощник, который выводит содержимое переданной директории
+Directory Reader — класс-помощник, который выводит содержимое переданного пути без ссылок на родительскую папку и текущую.
 
 ## Требования
 
-- PHP>=8
+- [PHP](https://php.net) >= 8
 
 ## Установка
 
@@ -14,9 +14,9 @@ composer require kirill-gubenko/directory-reader
 
 ## Использование
 
-```
+```php
 <?php
 
 $directoryReader = new DirectoryReader();
-print_r($directoryReader->getFiles(__DIR__)); // returns array
+print_r($directoryReader->getFiles(__DIR__)); // Returns array
 ```
