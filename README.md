@@ -61,8 +61,6 @@ $directoryReader = new DirectoryReader($directoryScanner, $fileInfoProvider);
 ```php
 <?php
 
-$directoryReader = DirectoryReaderFactory::create();
-
 // Получение массива файлов
 print_r($directoryReader->getFiles('/путь/к/каталогу'));
 ```
@@ -72,13 +70,11 @@ print_r($directoryReader->getFiles('/путь/к/каталогу'));
 Метод `getFileInfo` возвращает информацию о файле в виде массива по указанному пути к файлу:
 
 - `'size'` размер файла;
-- `'last_modified'` дата последнего изменения файла;
+- `'last_modified'` дата последнего изменения файла в формате временной метки Unix;
 - `'permissions'` разрешения доступа к файлу.
 
 ```php
 <?php
-
-$directoryReader = DirectoryReaderFactory::create();
 
 // Получение информации в виде массива о конкретном файле
 print_r($directoryReader->getFileInfo('/путь/к/файлу.txt'));
@@ -90,8 +86,6 @@ print_r($directoryReader->getFileInfo('/путь/к/файлу.txt'));
 
 ```php
 <?php
-
-$directoryReader = DirectoryReaderFactory::create();
 
 // Получение массиваы файлов с информацией
 print_r($directoryReader->getFilesWithInfo('/путь/к/каталогу'));
