@@ -46,11 +46,13 @@ $fileInfoProvider = new FileInfoProvider($fileVerifier);
 $directoryReader = new DirectoryReader($directoryScanner, $fileInfoProvider);
 ```
 
-### Конструктор основного класса и методы
+### Конструктор основного класса
 
 #### `__construct(DirectoryScannerInterface $directoryScanner, FileInfoProviderInterface $fileInfoProvider)`
 
 Конструктор класса `DirectoryReader`, который принимает два параметра: `$directoryScanner` и `$fileInfoProvider`, реализующих интерфейсы `DirectoryScannerInterface` и `FileInfoProviderInterface`.
+
+### Методы
 
 #### `getFiles(string $path): array`
 
